@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohamad Waleed Nassar | Vehicle electronics engineer</title>
+<meta name="description" content="Vehicle electronics engineer at Nissan Egypt. UDS over CAN diagnostics, SIDIS and VEP end-of-line validation, and Python tooling that connects the factory to the dealer.">
+<meta name="theme-color" content="#0d2b25">
+<meta property="og:title" content="Mohamad Waleed Nassar | Vehicle electronics engineer">
+<meta property="og:description" content="UDS over CAN diagnostics, VEP end-of-line validation and Python tooling for production, from Nissan Egypt.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script src="data.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="mark" href="#top" aria-label="Mohamad Waleed Nassar, home"><span>MW</span></a>
+  <nav id="nav" aria-label="Primary">
+    <a href="#map">System map</a>
+    <a href="#cases">Case files</a>
+    <a href="#career">Career</a>
+    <a href="#archive">All projects</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="bar-tools">
+    <button class="theme" id="theme" type="button" aria-label="Switch to light theme"><span aria-hidden="true"></span></button>
+    <a class="btn small" href="assets/Mohamad-Waleed-Nassar-CV.pdf" download>Download CV</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="traces" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="status"><i class="dot" aria-hidden="true"></i>Cairo, Egypt. Open to relocation and international travel.</p>
+      <h1 id="headline">Vehicle electronics, traceable from the end of the line to the dealer.</h1>
+      <p class="lede">I'm Mohamad, a mechatronics engineer at Nissan Egypt. I validate ECUs with UDS over CAN, then build the Python tools that put that data in front of production, engineering and Aftersales.</p>
+      <p class="roleline" aria-live="off">Right now: <span id="rotator">UDS over CAN diagnostics</span></p>
+      <div class="cta">
+        <a class="btn" href="#cases">Read the case files</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <figure class="board">
+        <span class="pad tl"></span><span class="pad tr"></span><span class="pad bl"></span><span class="pad br"></span>
+        <img src="assets/portrait.webp" alt="Mohamad Waleed Nassar smiling, in a dark blazer" width="840" height="1024" fetchpriority="high">
+        <figcaption>U1 · MW-2026</figcaption>
+      </figure>
+      <div class="monitor" role="img" aria-label="Illustrative CAN bus monitor showing UDS diagnostic frames scrolling by">
+        <div class="monitor-head"><span><i class="dot"></i>CAN bus, 500 kbit/s</span><span>illustrative</span></div>
+        <ol id="frames"></ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <dl class="stats" id="stats"></dl>
+  </div>
+</section>
+
+<!-- SYSTEM MAP -->
+<section class="section" id="map">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>One data path, three tools built on top of it</h2>
+      <p>Select any block to see what it does. Blocks with a case file link straight to the details. This is a simplified diagram of how my Nissan Egypt projects connect; it shows no real Nissan data.</p>
+    </div>
+    <div class="map-card">
+      <div class="map-scroll"><svg id="mapsvg" viewBox="0 0 1000 420" role="group" aria-label="System map of the vehicle electronics data path"></svg></div>
+      <div class="map-detail" id="mapdetail" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE FILES -->
+<section class="section alt" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Case files</h2>
+      <p>Six pieces of work from Nissan Egypt: what the situation was, what I built, and what changed.</p>
+    </div>
+    <div class="cases">
+      <div class="case-tabs" id="casetabs" role="tablist" aria-label="Case files" aria-orientation="vertical"></div>
+      <article class="case-panel" id="casepanel" role="tabpanel" tabindex="0" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section class="section" id="career">
+  <div class="wrap narrow">
+    <div class="sec-head">
+      <h2>Career so far</h2>
+      <p>Three years inside OEM and Tier-1 factories, from intern to owning a system.</p>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="section alt" id="archive">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>All projects</h2>
+      <p>Professional work, graduation project and coursework. Filter by area or search by tool.</p>
+    </div>
+    <div class="tools">
+      <div class="chips" id="filters" role="group" aria-label="Filter by category"></div>
+      <label class="search"><span class="sr">Search projects</span><input id="search" type="search" placeholder="Search: CAN, Python, PLC…" autocomplete="off"></label>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No project matches that search. Clear the search or pick another category.</p>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section class="section" id="toolkit">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Toolkit and training</h2>
+      <p>What I use, grouped by what I use it for.</p>
+    </div>
+    <div class="skills" id="skills"></div>
+    <h3 class="sub">Education and courses</h3>
+    <div class="edu" id="edu"></div>
+    <h3 class="sub">Beyond engineering</h3>
+    <ul class="lead" id="lead"></ul>
+    <p class="langs">Languages: Arabic, English, French.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap narrow">
+    <h2>Hiring for vehicle diagnostics, validation or launch work?</h2>
+    <p class="lede">I'm based in Cairo and open to relocation and international travel. The quickest way to reach me is email.</p>
+    <div class="cta">
+      <a class="btn" id="mail" href="mailto:mohammadwaleednassar@gmail.com">Email me</a>
+      <button class="btn ghost" id="copy" type="button">Copy address</button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/mohamad-waleed-nassar" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/MohamadWaleedNassar" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="copied" id="copied" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer class="foot wrap">
+  <span>© <span id="year">2026</span> Mohamad Waleed Nassar</span>
+  <span>Diagrams are illustrations, not Nissan data.</span>
+  <a href="#top">Back to top</a>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title"><button class="x" id="dlg-x" type="button" aria-label="Close">×</button><div id="dlg-body"></div></dialog>
+</body>
+</html>
